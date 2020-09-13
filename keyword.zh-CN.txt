@@ -1,0 +1,76 @@
+# Part I：定义每一个单字的名称。这个参数用于生成每一个单字所对应的变量名。
+# 实际操作如下：
+#
+# BU 不  -->  const GlyphBU rune = 0x4E0D
+# 
+# 具体用法：
+# 首先为单字的变量名称，习惯上用单字的拼音来指代；然后加个空格，空格后为具体的单字
+# 空格后为具体的单字
+
+LING    令
+WEI     为
+SHI     是
+RU      如
+HE      何
+YI      已
+ZHIy    知
+FAN     返
+HUI     回
+BU      不
+DENG    等
+YU      于
+DA      大
+XIAO    小
+YIi     以
+GUO     果
+FOU     否
+ZE      则
+MEI     每
+DANG    当
+CHENG   成
+DING    定
+YIy     义
+QI      其
+CI      此
+ZHU     注
+HUO     或
+QIE     且
+ZHI     之
+ZAI     再
+BIAN    遍
+LI      历
+HENG    恒
+================================
+# Part II： 定义每一个关键词及其对应的 tokenType。
+# 使用说明：
+#
+# 类型名    类型ID      关键词
+#
+DeclareW        40      令
+LogicYesW       41      为
+AssignConstW    42      恒为
+CondOtherW      43      再如
+CondW           44      如果
+FuncW           45      如何
+GetterW         46      何为
+ParamAssignW    47      已知
+ReturnW         48      返回
+LogicNotW       49      不为
+LogicNotEqW     51      不等于
+LogicLteW       52      不大于
+LogicGteW       53      不小于
+LogicLtW        54      小于
+LogicGtW        55      大于
+VarOneW         56      以
+CondElseW       59      否则
+WhileLoopW      60      每当
+ObjNewW         61      成为
+ObjDefineW      63      定义
+ObjThisW        65      其
+LogicOrW        69      或
+LogicAndW       70      且
+ObjDotW         71      之
+ObjConstructW   73      是为
+LogicEqualW     74      等于
+StaticSelfW     75      此之
+IteratorW       76      遍历
